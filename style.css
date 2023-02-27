@@ -1,10 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: #03001C;
+    background-color: #071E3D;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .tableauPlaceholder{
-    /* border-radius: 10px; */
     margin: 0 auto;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.logo i{
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 10px;
+    color: #21E6C1;
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+header{
+    background-color: #071E3D;
+    padding: 20px;
+    z-index: 999;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header ul li{
+    transition: all 0.5s ease ;
+    cursor: pointer;
+}
+header ul li a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+}
+
+header ul li:hover a{
+    color: #21E6C1;
+    transition: all 0.5s ease ;
+}
+
+.project-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px;
 }

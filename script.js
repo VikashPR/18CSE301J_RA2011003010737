@@ -1,10 +1,10 @@
 var divElement = document.getElementById("viz1677491723660");
 var vizElement = divElement.getElementsByTagName("object")[0];
 if (divElement.offsetWidth > 800) {
-  vizElement.style.width = "1100px";
+  vizElement.style.width = "1000px";
   vizElement.style.height = "827px";
 } else if (divElement.offsetWidth > 500) {
-  vizElement.style.width = "1100px";
+  vizElement.style.width = "1000px";
   vizElement.style.height = "827px";
 } else {
   vizElement.style.width = "100%";
