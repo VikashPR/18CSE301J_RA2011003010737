@@ -1,0 +1,10 @@
+body{
+    background-color: #03001C;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.tableauPlaceholder{
+    /* border-radius: 10px; */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
