@@ -54,7 +54,7 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
   var svg = d3
     .select("#" + DivID)
     .append("svg")
-    .style("fill", "white")
+    .style("fill", "#c62a88")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -85,7 +85,7 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
     .append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
-    .style("fill", "white")
+    .style("fill", "#c62a88")
     .call(xAxis);
 
   // Drawing Horizontal grid lines.
@@ -93,7 +93,7 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
     .append("g")
     .attr("class", "GridX")
     .selectAll("line.grid")
-    .style("fill", "white")
+    .style("fill", "#c62a88")
     .data(y.ticks())
     .enter()
     .append("line")
@@ -118,22 +118,22 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
     .attr("y", 6)
     .attr("dy", ".71em")
     .style("text-anchor", "end")
-    .style("fill", "white")
+    .style("fill", "#c62a88")
     .text(RevenueName);
 
   // Drawing Lines for each segments
   var segment = svg
     .selectAll(".segment")
     .data(Data)
-    .style("fill", "white")
+    .style("fill", "#c62a88")
     .enter()
     .append("g")
     .attr("class", "segment")
-    .style("fill", "white");
+    .style("fill", "#c62a88");
 
   segment
     .append("path")
-    // .style("fill", "white")
+    // .style("fill", "#c62a88")
     .attr("class", "line")
     .attr("id", function (d) {
       return d.name;
@@ -161,7 +161,7 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
     .attr("cy", function (d) {
       return y(d.value);
     })
-    .style("stroke", "white")
+    .style("stroke", "#FFF")
     .style("fill", function (d) {
       return color(this.parentNode.__data__.name);
     })
@@ -176,7 +176,7 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
 
   segment
     .append("text")
-    .style("fill", "white")
+    .style("fill", "#c62a88")
     .datum(function (d) {
       return { name: d.name, RevData: d.YearlyData[d.YearlyData.length - 1] };
     })

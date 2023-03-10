@@ -134,7 +134,7 @@ p {
     .axis path,
     .axis line {
         fill: none;
-        stroke: #FFF;
+        stroke: #c62a88;
         shape-rendering: crispEdges;
     }
 
@@ -148,12 +148,13 @@ p {
         stroke-width: 1.5px;
     }
     svg{
-        border:1px solid #FFF;
+        border:1px solid #c62a88;
+        border-radius: 10px;
     }
     .grid {
         fill: none;
         shape-rendering: crispEdges;
-        stroke: lightgrey;
+        stroke: #6f42c1;
         opacity: 0.7;
         stroke-width: 1px;
     }
