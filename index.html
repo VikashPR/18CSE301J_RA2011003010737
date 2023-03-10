@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 
     <title>Info Viz</title>
 </head>
@@ -357,7 +358,8 @@
     <div class="quotes">
         <div class="bg-gray-900 py-8 rounded overflow-hidden">
             <blockquote class="text-2xl font-bold text-white mx-auto max-w-2xl rounded-lg">
-                <p>"The most powerful person in the world is a story teller. The story teller sets the vision, values and
+                <p>"The most powerful person in the world is a story teller. The story teller sets the vision, values
+                    and
                     agenda of an entire generation that is to come."</p>
                 <cite class="block mt-4 text-gray-500 text-sm">- Steve Jobs, Founder CEO of Apple (1955-2011), <em>Data
                         Visualization Storytelling using
@@ -380,7 +382,8 @@
                     </li>
                     <li class="mb-4">
                         <p>➤
-                            The Finance Ministers budget speech is a collection of words, which can be used to create a word
+                            The Finance Ministers budget speech is a collection of words, which can be used to create a
+                            word
                             cloud.
                         </p>
                     </li>
@@ -448,7 +451,7 @@
                 </ul>
             </div>
         </div>
-    
+
         <h1 class="subtitle">Word Cloud Generation</h1>
         <div class="img-grid">
             <div class="img-one">
@@ -465,7 +468,12 @@
             </div>
         </div>
     </section>
+    <section class="manufacturing-sector">
+        <div id="divChartTrends">
+        </div>
+    </section>
     <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/d3.js"></script>
     <script type="module" src="./assets/script/globe.js"></script>
 </body>
 

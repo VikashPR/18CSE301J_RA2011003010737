@@ -119,3 +119,53 @@ p {
   width: 100%;
   max-width: 450px;
 }
+
+.manufacturing-sector{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* D3.Js */
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #FFF;
+        shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+        display: none;
+    }
+
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    svg{
+        border:1px solid #FFF;
+    }
+    .grid {
+        fill: none;
+        shape-rendering: crispEdges;
+        stroke: lightgrey;
+        opacity: 0.7;
+        stroke-width: 1px;
+    }
+    .segmentText{
+        cursor:pointer;
+    }
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        background: #ddd;
+        border: solid 1px #aaa;
+        color: var(--purple);
+        border-radius: 8px;
+        pointer-events: none;
+    }
