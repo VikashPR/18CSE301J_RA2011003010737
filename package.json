@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/VikashPR/18CSE301J_RA2011003010737/issues"
   },
-  "homepage": "https://github.com/VikashPR/18CSE301J_RA2011003010737#readme"
+  "homepage": "https://github.com/VikashPR/18CSE301J_RA2011003010737#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  }
 }
