@@ -1,0 +1,20 @@
+{
+  "name": "18cse301j_ra2011003010737",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VikashPR/18CSE301J_RA2011003010737.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VikashPR/18CSE301J_RA2011003010737/issues"
+  },
+  "homepage": "https://github.com/VikashPR/18CSE301J_RA2011003010737#readme"
+}
