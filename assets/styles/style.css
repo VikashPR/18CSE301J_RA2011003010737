@@ -89,7 +89,8 @@ p {
 .sector-gdp,
 .fin_min-word_cloud,
 .manufacturing-d3,
-.manufacturing-co2-d3 {
+.manufacturing-co2-d3,
+.gephi-container {
   padding: 100px;
   height: 100%;
   width: 100%;
@@ -204,4 +205,14 @@ div.tooltip {
 
 .manufacturing-co2-chart {
   margin-left: 18%;
+}
+
+/* Gephi */
+
+
+.gephi-container img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
