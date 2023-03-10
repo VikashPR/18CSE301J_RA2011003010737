@@ -85,14 +85,16 @@ p {
 }
 
 .world-gdp,
-.indian-gdp {
+.indian-gdp,
+.sector-gdp{
   padding: 100px;
   height: 100%;
   width: 100%;
 }
 
 .world-map,
-.indian-map {
+.indian-map,
+.sector-gdp-dashboard {
   margin-left: 10%;
 }
 
