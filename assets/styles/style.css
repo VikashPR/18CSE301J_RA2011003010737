@@ -87,7 +87,8 @@ p {
 .world-gdp,
 .indian-gdp,
 .sector-gdp,
-.fin_min-word_cloud{
+.fin_min-word_cloud,
+.manufacturing-d3{
   padding: 100px;
   height: 100%;
   width: 100%;
@@ -98,7 +99,6 @@ p {
 .sector-gdp-dashboard {
   margin-left: 10%;
 }
-
 .resources li{
     cursor: pointer;
 }
@@ -131,6 +131,11 @@ p {
 }
 
 /* D3.Js */
+
+.manufacturing-d3 #manufacturing-chart{
+  margin-left: 18%;
+}
+
     .axis path,
     .axis line {
         fill: none;

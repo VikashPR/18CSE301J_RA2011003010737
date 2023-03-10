@@ -222,4 +222,4 @@ function fnDrawMultiLineChart(Data, DivID, RevenueName) {
 }
 
 // Calling function
-fnDrawMultiLineChart(Data, "divChartTrends", "Billions of US $");
+fnDrawMultiLineChart(Data, "manufacturing-chart", "Billions of US $");
