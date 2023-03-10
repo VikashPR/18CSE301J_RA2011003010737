@@ -88,7 +88,8 @@ p {
 .indian-gdp,
 .sector-gdp,
 .fin_min-word_cloud,
-.manufacturing-d3{
+.manufacturing-d3,
+.manufacturing-co2-d3 {
   padding: 100px;
   height: 100%;
   width: 100%;
@@ -99,17 +100,16 @@ p {
 .sector-gdp-dashboard {
   margin-left: 10%;
 }
-.resources li{
-    cursor: pointer;
+.resources li {
+  cursor: pointer;
 }
-
 
 .img-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-    margin: 20px 0;
-    place-items: center;
+  margin: 20px 0;
+  place-items: center;
 }
 
 .img-one img,
@@ -120,7 +120,7 @@ p {
   max-width: 450px;
 }
 
-.manufacturing-sector{
+.manufacturing-sector {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,47 +132,76 @@ p {
 
 /* D3.Js */
 
-.manufacturing-d3 #manufacturing-chart{
+.manufacturing-d3 #manufacturing-chart {
   margin-left: 18%;
 }
+.manufacturing-co2-d3 .axis path,
+.axis line {
+  fill: none;
+  stroke: #c62a88;
+  shape-rendering: crispEdges;
+}
 
-    .axis path,
-    .axis line {
-        fill: none;
-        stroke: #c62a88;
-        shape-rendering: crispEdges;
-    }
+.x.axis path {
+  display: none;
+}
 
-    .x.axis path {
-        display: none;
-    }
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+svg {
+  border: 1px solid #c62a88;
+  border-radius: 10px;
+}
+.grid {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: #6f42c1;
+  opacity: 0.7;
+  stroke-width: 1px;
+}
+.segmentText {
+  cursor: pointer;
+}
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  background: #ddd;
+  border: solid 1px #aaa;
+  color: var(--purple);
+  border-radius: 8px;
+  pointer-events: none;
+  padding: 5px;
+}
 
-    .line {
-        fill: none;
-        stroke: steelblue;
-        stroke-width: 1.5px;
-    }
-    svg{
-        border:1px solid #c62a88;
-        border-radius: 10px;
-    }
-    .grid {
-        fill: none;
-        shape-rendering: crispEdges;
-        stroke: #6f42c1;
-        opacity: 0.7;
-        stroke-width: 1px;
-    }
-    .segmentText{
-        cursor:pointer;
-    }
-    div.tooltip {
-        position: absolute;
-        text-align: center;
-        background: #ddd;
-        border: solid 1px #aaa;
-        color: var(--purple);
-        border-radius: 8px;
-        pointer-events: none;
-        padding: 5px;
-    }
+.line {
+  fill: none;
+  stroke: #3498db;
+  stroke-width: 2px;
+}
+
+.area {
+  opacity: 0.25;
+  fill: #3498db;
+}
+.circle {
+  stroke: #3498db;
+  fill: #fff;
+  stroke-width: 2px;
+}
+.circle.active {
+  stroke-width: 3px;
+}
+.bubble rect {
+  stroke: #3498db;
+  fill: #fff;
+}
+.bubble text {
+  font-size: 12px;
+}
+
+.manufacturing-co2-chart {
+  margin-left: 18%;
+}

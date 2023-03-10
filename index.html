@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src='//code.jquery.com/jquery-2.2.2.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 
     <title>Info Viz</title>
@@ -553,9 +554,86 @@
             </div>
         </div>
     </section>
+    <section class="manufacturing-co2-d3 flex align-center flex-col">
+        <h1 class="title"><span>➽</span> Growth of Manufacturing Sector Vs Co2 Emission </h1>
+        <div class="manufacturing-co2-chart"></div>
+        <button href="#"
+            class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded mx-auto mt-10"
+            id="toggleData">
+            Toggle Manufacturing Viz
+        </button>
+        <div class="summary flex justify-around mt-10 gap-x-6 gap-x-12">
+            <div>
+                <h1 class="subtitle">Findings</h1>
+                <ul class="findings max-w-2xl">
+                    <li class="mb-4">
+                        <p>➤
+                            Manufacturing sector grew at an average annual rate of 7.4%, while CO2 emissions from the
+                            sector
+                            increased at an average
+                            annual rate of 4.6%.
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <p>➤
+                            India has pledged to reduce carbon emissions intensity by 33-35% by 2030, but rapid growth
+                            in
+                            manufacturing may make it
+                            challenging.
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <p>➤
+                            The government has launched initiatives to promote sustainable manufacturing and reduce
+                            emissions, but impact is yet to
+                            be seen.
+                        </p>
+                    </li>
+                    <li class="mb-4">
+                        <p>➤
+                            Transportation, agriculture, and residential sectors also contribute to India's overall
+                            emissions.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="subtitle">Source</h1>
+                <ul class="resources">
+                    <li class="mb-2">
+                        <cite class="block mt-4 text-gray-500 text-sm">➤ International Energy Agency
+                            <em>
+                                <a href="https://www.iea.org/reports/co2-emissions-in-2022">,
+                                    Article, CO2 Emissions in 2022 – Analysis - IEA</a>
+                            </em>
+                        </cite>
+                    </li>
+                    <li class="mb-2">
+                        <cite class="block mt-4 text-gray-500 text-sm">➤ Press Information Bureau
+                            <em>
+                                <a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1847812">,
+                                    Article, Cabinet approves India’s Updated Nationally Determined Contribution to be
+                                    communicated to the United Nations ...</a>
+                            </em>
+                        </cite>
+                    </li>
+                    <li class="mb-2">
+                        <cite class="block mt-4 text-gray-500 text-sm">➤ QAE India
+                            <em>
+                                <a href="https://www.investindia.gov.in/foreign-direct-investment">,
+                                    Carbon footprints of the Indian AFOLU (Agriculture, Forestry ...)
+                                </a>
+                            </em>
+                        </cite>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <script src="./assets/script/script.js"></script>
     <script src="./assets/script/d3.js"></script>
     <script type="module" src="./assets/script/globe.js"></script>
+
 </body>
 
 </html>
