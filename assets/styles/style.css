@@ -86,7 +86,8 @@ p {
 
 .world-gdp,
 .indian-gdp,
-.sector-gdp{
+.sector-gdp,
+.fin_min-word_cloud{
   padding: 100px;
   height: 100%;
   width: 100%;
@@ -100,4 +101,21 @@ p {
 
 .resources li{
     cursor: pointer;
+}
+
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+    margin: 20px 0;
+    place-items: center;
+}
+
+.img-one img,
+.img-two img,
+.img-three img,
+.img-word-cloud img {
+  width: 100%;
+  max-width: 450px;
 }
