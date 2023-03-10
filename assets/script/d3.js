@@ -588,7 +588,7 @@ function showCircleDetail(data) {
     .attr("x", detailWidth / 2)
     .attr("y", detailHeight / 3)
     .attr("text-anchor", "middle")
-    .text("Price: " + data.value);
+    .text("Co2 MMT / USD $B: " + Math.round(data.value * 100) / 100);
 
   text
     .append("tspan")
