@@ -41,11 +41,32 @@ ul{
     text-align: justify;
     color: #FFF;
 }
+.title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--green);
+}
+
+.title span{
+    color: var(--pink);
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #FFF;
+}
 .quotes{
     width:50%;
     margin: 20px auto;
 
 }
+
+
+/* Custom Styles */
 .data-desc{
     display: flex;
     align-items: center;
@@ -59,20 +80,8 @@ ul{
     margin: auto;
     padding: 50px;
 }
-.content h1{
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: var(--green);
-}
 
-.content p{
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-    text-align: justify;
-    color: #FFF;
-}
+
 
 
 
